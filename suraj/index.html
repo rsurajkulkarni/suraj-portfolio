@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+    
+    .header {
+      background-color: #9933cc;
+      color: #ffffff;
+      padding: 5px;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #33b5e5;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .menu li:hover {
+        text-decoration: underline;
+      background-color: #0099cc;
+    }
+    
+    .aside {
+      background-color: #33b5e5;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    #box1{
+        float: left;
+    }
+    #box2{
+        float: right;
+    }
+    #box3{
+        float: left;
+    }
+    #box4{
+        float: right;
+    }
+    .img-fluid{
+        max-width:100%; 
+         height:auto; 
+    }
+    .p-5{padding:3rem!important}.pt-5,.py-5{padding-top:3rem!important}.pr-5,.px-5{padding-right:3rem!important}.pb-5,.py-5{padding-bottom:3rem!important}
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.card1{
+  background-color: white;
+}
+.card2 {
+background-color: white;
+}
+.card3{
+  background-color: white;
+}
+.card4 {
+background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column1 {
+  background-color: white;
+  float: left;
+  width: 50%;
+  padding-left: 5px;
+  padding: 0 10px;
+}
+.column2 {
+  background-color: white;
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.column3 {
+  background-color: white;
+  float: left;
+  width: 50%;
+  padding-left: 5px;
+  padding: 0 10px;
+}
+.column4 {
+  background-color: white;
+  float: left;
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+    </style>
+    <title>suraj Portfolio</title>
+  </head>
+  <body style="background-color: #33324F;">
+     <div id="box">
+       <div class="container navigation pt-3">
+          <div id="box1" class="row">
+            <h5  style="color: white;font-size:20px;padding-left: 40px;">suraj Portfolio</h5>
+          </div>
+
+          <div id="box2" class="col-6 pt-2">
+            <div
+              class="row text-center p-0 d-flex justify-content-end align-items-center"
+            >
+              <div class="col-3">
+                <a href="#about" class="text-white navigation-link" style="color: white;">About</a>
+              </div>
+              <div class="col-3">
+                <a href="#projects" class="text-white navigation-link" style="color: white;"
+                  >work</a
+                >
+              </div>
+              <div class="col-3">
+                <a href="#social-media" class="text-white navigation-link" style="color: white;"
+                  >Contact</a
+                >
+              </div>
+              <!-- <div class="col-3">
+                <a href="#Services" class="text-white navigation-link" style="color: white;"
+                  >Services</a
+                >
+              </div> -->
+              <div class="col-3">
+                <a
+                  href="https://github.com/rsurajkulkarni/surajkulkarni/blob/master/suraj/suraj.pdf/"
+                  target="_blank"
+                  class="text-white navigation-link" style="color: white;"
+                  >Resume</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+   
+    </div>      
+    <div class="main-container container" id="box3">
+        <div class="row main_row">
+          <div class="col-6" style="padding-left: 100px; padding-top: 100px;">
+            <h2 class="text-white" style="font-size: 40px; color: white;">Hello, I'm</h2>
+            <h1 class="text-warning m-heading" style="font-size: 60px; color: yellow">Suraj Kulkarni</h1>
+            <h2 class="text-white" style="font-size: 40px; color: white">Software Developer</h2>
+          </div>
+          <div class="col-6" id="box4">
+            <img 
+              src="/home/tarsha/Downloads/suraj.jpg" width="800" height="800"
+              class="img-fluid"1
+            />
+          </div>
+        </div>
+      </div>
+    <!-- About Section -->
+    <div id="about" class="container about p-5">
+        <div class="row">
+          <div class="col-6">
+            <img src="./images/about_img.svg" class="img-fluid" />
+          </div>
+          <div class="col-6 pl-5 pt-5 pb-5 text-white">
+           <div style="padding-top:60px;">
+            <h3 class="text-warning" style="color: yellow;font-size:40px;">About Me</h3>
+            <h1 class="m-heading" style="color: white;font-size:50px;">A little bit about me</h1>
+            <p style="color: white;">
+              I am from Sindhanur, Karnataka. I have studied my Engineering from 
+              Ballari Institute of Technology and Management
+              <b >Software Engineer at Tarsha Syatems</b> 
+              Good at developing Java, Python, Big Data with 1.3 years of experience
+            </p>
+         
+            <p style="color: white;">
+                I am Flexible to learn new things,Self-starter, fast learner, and the ability to work in a fast-paced environment,
+             Quick learning curve on functional and technical aspects of the project..
+              </p>
+           
+            <!-- <button class="btn btn-outline-warning">Learn More</button> -->
+        </div>   
+          </div>
+        </div>
+      </div>  
+     <!-- Projects Section -->
+     <div id="projects" class="container mt-5 pt-5">
+        <h1 class="text-warning mb-3 pb-2" style="color: yellow;font-size:40px;">Work</h1>
+        <div class="row" > 
+          <div class="column1">
+           <img src="./images/navy1.jpg" alt="Avatar" style="width:100%;float: left;" >
+             <div class="container">
+                <h4><b style="font-size: 30px;">Traffic Analysis using Big Data</b></h4> 
+                 <p>This project is developed under DRDO and is a part of Indian Navy project, 
+                   we will get the Information about the naval ships and developed areal time Traffic Analysis software called 
+                   Indian Maritime Situation Awareness System.</p> 
+               </div>
+             </div>
+             <br>
+
+          <div class="column2">
+            <img src="./images/navy1.jpg" alt="Avatar" style="width:100%;float:right">
+            <div class="container">
+              <h4><b style="font-size: 30px;">Big Data Installer</b></h4> 
+              <p>This project is developed under DRDO and is a part of Indian Navy project,
+                Here the Big Data Tools are Automatically installed and 
+                services are started on one click with single node and cluster node.
+              </p> 
+            </div>
+        </div>
+        <br>
+        <div class="column3">
+          <img src="./images/simota.png" alt="Avatar" style="width:100%;height: 200px ;float: left;" >
+            <div class="container">
+               <h4><b style="font-size: 30px;">SIM OTA</b></h4> 
+                <p>This is over the air technology for sim provisioning,
+                  We are developing the command packet and application protocol data unit(APDU) for sim
+provisioning,This project is under development.
+                </p> 
+              </div>
+            </div>
+            <br>
+            <div class="column4">
+              <img src="./images/rora.png" alt="Avatar" style="width:100%;float: left;" >
+                <div class="container">
+                   <h4><b style="font-size: 30px;">RORA</b></h4> 
+                    <p>This is a Karnataka Govt. project, the application that assign a labour to the customers like
+                      plumber,carpenter,etc. There are few labours who are already present in karnataka labour dept.
+                      This application search and assign a job for these labours for the customers 
+                    </p> 
+                  </div>
+                </div>
+                <br>
+                <div id="social-media" class="container-fluid">
+                  <div class="container text-white py-5">
+                    <h4 class="text-warning" style="color: yellow;font-size:40px;">Contact</h4>
+                   
+                        <h2 style="color: white;">Suraj R Kulkarni</h2>
+                        <p style="color: white;">mobile number : +91 8951112420</p>
+                        <p style="color: white;">E mail id : rsurajk4@gmail.com</p>
+                        <p style="color: white;">Address : near sai mandir Adarsha Colony,Sindhanur,dt Raichur,Karnataka-584128</p>
+                    <br>
+                    <div class="col-3" style="width: 500px;">
+                      <a style="font-size: 5px;"
+                        href="https://www.linkedin.com/in/suraj-kulkarni-84bb34135"
+                        target="_blank"
+                        class="text-white navigation-link" style="color: white;"
+                        ><button style="size: 100px;" type="button">Linkdin</button></a
+                      >
+                    </div>
+                </div>
+      </div>
+     </div>
+         
+          
+         
+     
+    
+  </body>
+</html>
